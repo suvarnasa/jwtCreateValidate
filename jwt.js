@@ -5,11 +5,11 @@ const payload = {
     username: 'sas',
     userid: 12345,
     role: 'Admin',
-    //nonce : 'aaa' // that which is received from client(okta) only in implicit flow. Not required in auth flow.
+    //nonce : 'aaa' // that which is received from client only in implicit flow. Not required in auth flow.
 }
 
 const signOptions = {
-    issuer: 'login.ecb.com', //matches the identity of IDP 
+    issuer: 'login.ooo.com', //matches the identity of IDP 
     subject: 'test token', //optional
     audience: 'clinet_id', // clienid of the incoming request. ie brand
     algorithm: 'RS256', // algorithm
